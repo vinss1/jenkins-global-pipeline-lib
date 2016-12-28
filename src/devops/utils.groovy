@@ -1,3 +1,4 @@
+package devops.utils
 
 def sendSlackMessage(message, color, channel, team) {
   def appendedmessage = """
