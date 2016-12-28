@@ -3,8 +3,6 @@ package devops.utils
 def sendSlackMessage(message, color, channel, team) {
   def appendedmessage = """
 ${env.JOB_NAME} - #${env.BUILD_NUMBER}
-${env.CHANGE_ID}
-  ${env.CHANGE_AUTHOR}: ${env.CHANGE_TITLE}
 ${message}
 (<${env.BUILD_URL}|Open>)
 """
